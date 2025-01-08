@@ -1,0 +1,296 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 JAVASCRIPT:\par
+It is obeject based and object oriented programming language\par
+used to convert static page into dynamic page\par
+object base-in js everything is treated as  object\par
+ex:class,function,method etc\par
+ways of writing:\par
+2 ways:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Internal\par
+{\pntext\f1\'B7\tab}External\par
+
+\pard\sa200\sl276\slmult1 Internal:Inside the html body tag if we take a script tag(javascript code is written here) in same file.\par
+External:we create a 1 .js file here link it to the html file using script tag.\par
+script tag  has an attribute called src in src we have javascript path.\par
+Variables:(same definitoin diff syntax )\par
+a data value or value used in PL\par
+primitive\par
+non primitive\par
+DATATYPES:It is a value used in PL\par
+primitive and non primitive\par
+Primitive:Number,String,Boolean,Undefined,Null,Big-int\par
+Non primitive:\tab Class,Object,Array,Functions,Map,Sets\par
+Number:integer,flat,decimal,,integers\par
+we dont have char datatype.\par
+'," considered as string.\par
+string here is primitive but non primitive in java.\par
+back tick comes under string\par
+Undefined :we define but not use.\par
+to cross the range of number data type we use big-int.\par
+in js variables are used to values.\par
+In js variables are dynamic in nature\par
+ex: var a=10      int a=10;\par
+in js interpreter is going to understand which type of data type we provided\par
+no need to mention the datatypes here.\par
+here we have scopes in variables here\par
+1.global-scope:Variables or functions declared in the global scope are accessible from anywhere in the code. This means they can be used by any function or block within the script.\par
+2.local/script-scope\par
+4.block-scope\par
+block scope:\par
+\{\par
+variable\par
+\}\par
+variable type:\par
+1.var\par
+2.let\par
+3.const\par
+shift+! enter\par
+pl that runs on browser called as client side pl\par
+pl that runs outside the browser is called server side pl.\par
+node js:server side pl\par
+const,let,var\par
+const:redeclaration,reinstallation are not possible\par
+let:redeclaration and reintialization is not possible., but reinitializationis possible\par
+var:redeclaration ,reintialization is  possible.\par
+\par
+operator:It is a predefined symbol used to perform a specific operation.\par
+EX:+,-,* etc.\par
+1.Arithmetic:+,-,*,%,/,++,--\par
+INCREMENT:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 1.Post increment(After) ---->First value is assigned and then increment.\par
+
+\pard\sa200\sl276\slmult1           let a=10\par
+         console.log(a)\par
+          console.log(a++) //10\par
+#Here in postincrement the first time the value remain same only 10 is assigned to a++\par
+let a=10\par
+         console.log(a)\par
+          console.log(a++)  //10\par
+          console.log(a++) //11\par
+\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 2.Preincrement(Before)---->First increment is done and then value is assigned.\par
+
+\pard\sa200\sl276\slmult1     eg:\par
+let b=10;\par
+console.log(b)  //10\par
+console.log(++b)  //11\par
+2.Assignment:shot-hand\par
+Ex:+=,-=,*=,%=,/=\par
+\par
+//code:\par
+var c=10\par
+console.log(c)\par
+c=c+10  //c+=10\par
+\par
+\par
+\par
+3.Logical \par
+AND(&&)\par
+OR(||)\par
+NOT(!)\par
+4.Relational:<,>,<=,>=,==,===,!=  (all relational give output in boolean)\par
+==:CHECH ONLY VALUE BUT NOT DAATATYPE\par
+===:CHECKS BOTH DATATYPE AND VALUE:\par
+//code\par
+console.log(5==5)  //true\par
+console.log(5 == "5")  //true\par
+console.log(5 === 5)  //true\par
+console.log(5 ==="5")  //False\par
+\par
+TWO OPERATORS ARE IMPORTANT:\par
+5.Ternary\par
+----->It will accept a 3 operands\par
+SYNTAX:\par
+(condition) ?true-statement : false-statement\par
+\par
+conditional statements:\par
+---------------------------\par
+they are used to make decisions based on some conditions.\par
+simple if :(It only have two statements).\par
+eg:\par
+if(5<=10)\{\par
+console.log("hello world")\par
+\}\par
+if-else\par
+if(100<=10)\{\par
+console.log("hello")\par
+\}else \{\par
+console.log("world")\par
+\}\par
+\par
+else-if-ekse (else-if-ladder)\par
+largest of three num:\par
+let a=10\par
+let b=20\par
+let c=30\par
+if(a>=b &&a>=c)\{\par
+console.log("a is greatest")\par
+\}\par
+else if(b>=a && b>=c)\{\par
+console.log("b is greatest")\par
+\}\par
+else\{\par
+console.log("c is greatest")\par
+\}\par
+\par
+
+\pard\ri-511\sa200\sl276\slmult1 nested if:condition inside the another condition.\par
+\par
+c\par
+
+\pard\sa200\sl276\slmult1 switch\par
+let n=1\par
+switch(n)\par
+\{\par
+        case 1:\par
+         \{\par
+                    console.log("print 1")\par
+          \}\par
+          break;\par
+              case 2: \{\par
+                        console.log(" print 2")\par
+            \}break;\par
+                 default\{\par
+                       console.log("invalid")\par
+                \}\par
+\}\par
+\par
+
+\pard\ri-511\sa200\sl276\slmult1 let user=admin\par
+let password=12345\par
+if(user == "admin")\par
+\{\par
+console.log("user valid")\par
+if (password === 12345)\par
+\{ \par
+     console.log("password valid")\par
+     console.log("login - successfull")\par
+   \}else\{\par
+    console.log("password invalid")\par
+    \}\par
+\}else\{\par
+       console.log("login unsuccessful")\par
+\}\par
+\par
+//while-loop\par
+//-->It will iterates set-of-instruction untill\par
+//condition becomes false\par
+//by default 0 iteration.\par
+//But when it comes to do=while-loop by default it takes one iteration\par
+//syntax\par
+\par
+//while(condition)\par
+//\{\par
+    //set of instructions\par
+//\}\par
+\par
+let i=1;\par
+while(i<=5)\{\par
+    console.log(i)\par
+    i++\par
+\}\par
+\par
+//do-while.loop\par
+//But when it comes to do-while-loop by default it takes one iteration\par
+//do\{\par
+ //   set of instructions\par
+//\}while(condition)\par
+\par
+let a=5\par
+do\{\par
+    console.log(a);\par
+   a--;\par
+\}while(a>=1)\par
+\par
+for loop\par
+-->three arguments:\par
+*initialization\par
+*condition\par
+*increment/decrement\par
+\par
+SYNTAX:\par
+for(intialization; condition; increment/decrement)\par
+\{\par
+\par
+\}\par
+for(let i=1;i<=5,i++)\par
+\{\par
+console.log(i)\par
+\}\par
+\b FUNCTIONS IN JAVASCRYPT:\par
+Functions are first citizens in javascrypt\par
+Functions are object in javascrypt\par
+TYPES:\par
+1.Function declaration statement/Named Function/Pure function\par
+2.Function Expression\par
+3.Function programming\b0\par
+  *Higher order function\par
+  *call back function \par
+\b 4.Arrow function\par
+5.Nested Function\par
+6.IIFE(Immediate invoking function expression)\par
+   *\b0 closure\par
+   *Lexical scope\par
+\b FUNCTION DECLARATION STATEMNET:\par
+\b0  --->It is a set of instruction or block of code used to perform specific task.\par
+\b SYNTAX:\par
+\b0 function fun-name(parameters,........) //declaration\par
+\{\par
+set of instructions\par
+local-scope\par
+\}\par
+fun-name(arguments,.....)//calling the function\par
+function is a keyword.\par
+fun-name is a identifier.\par
+parameters also identifier.\par
+identifier:characters,underscore,$\par
+arguments:data,values(data-type)\par
+    \par
+static:class\par
+non-static:object\par
+\par
+All functions in javascrypt have return keyword\par
+--------use:It will stop the execution of the function\par
+\{return(allow)\par
+console.log(how are you)\par
+\}\par
+//console.log not executes because execution stopped\par
+Hoisting\par
+-------\par
+we can call function before fun-declaration\par
+\par
+Advantage of function:code reusability (write once call it multiple times)\par
+\par
+ whenever we create a function a object is created in a yeap area.\par
+In this object an entire function is stored\par
+it has reference address \par
+This reference address is given to function name this process is called object referring.\par
+in javascrypt memory management handled by JS Engine\par
+in java memory management handled by Programmer.\par
+whenever we give function call for function name the interpreter will go inside the function then code inside is executed.\par
+create a function to create arithmetic opeeration for two numbers.\par
+\par
+\par
+\par
+\par
+\par
+\b\par
+\b0\par
+\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
